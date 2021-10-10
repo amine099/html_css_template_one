@@ -1,0 +1,118 @@
+/* star variables */
+
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 / 60%);
+}
+
+/* end variables */
+
+/* start global rules */
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+
+/* large */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* end global rules */
+
+/* star header */
+
+header {
+    width: 100%;
+    left: 0;
+    position: absolute;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 50px;
+    background-color: rgb(3, 112, 116);
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container ul li a {
+    margin-right: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    background-color: rgb(3, 112, 116);
+}
+
+header .container ul li a:hover {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+header .container .text {
+    padding-right: 150px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    font-weight: normal;
+    position: relative;
+    color: white;
+}
+
+header .container .text::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+}
